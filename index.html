@@ -157,20 +157,20 @@
 </head>
 
 <body>
-  <button class="next-slide-button" >Next Slide</button>
+  <button class="next-slide-button" onclick="nextSlide()" ontouch="nextSlide()" >Next Slide</button>
 <!--   <button class="next-slide-button" onclick="nextSlide()">Next Slide</button> -->
   <script>
 
-document.querySelector("button").onclick = function() {
-  console.log("Send post message");
-  window.postMessage("Hello React");
-}
-    // function nextSlide() {
-    //   // window.Android.nextSlide();
-    //   console.log("click nextslide button start");
-    //   window.postMessage("Sending data from WebView");
-    //   console.log("click nextslide button end");
-    // }
+// document.querySelector("button").onclick = function() {
+//   console.log("Send post message");
+//   window.postMessage("Hello React");
+// }
+    function nextSlide() {
+      // window.Android.nextSlide();
+      console.log("click nextslide button start");
+      window.postMessage("Sending data from WebView");
+      console.log("click nextslide button end");
+    }
 
   </script>
 
